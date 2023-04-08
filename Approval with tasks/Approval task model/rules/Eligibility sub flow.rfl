@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.ruleflow:RuleFlow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.ruleflow="http://ilog.rules.studio/model/ruleflow.ecore">
+  <name>Eligibility sub flow</name>
+  <uuid>f98d9740-439b-412d-a8ab-e9826c3467af</uuid>
+  <documentation><![CDATA[Sub flow to check if the loan is approved and to compute if needed the eventual insurante rate.]]></documentation>
+  <locale>en_US</locale>
+  <rfModel><Ruleflow xmlns="http://schemas.ilog.com/Rules/7.0/Ruleflow">
+    <Body>
+        <TaskList>
+            <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="task_1" Ordering="Default">
+                <RuleList>
+                    <Package Name="Eligibility"/>
+                </RuleList>
+            </RuleTask>
+            <StopTask Identifier="task_2"/>
+            <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="task_3" Ordering="Default">
+                <RuleList>
+                    <Package Name="Insurance"/>
+                </RuleList>
+            </RuleTask>
+            <StartTask Identifier="task_0">
+                <Actions Language="bal">set the insurance of 'the report' to a new insurance where 
+	required is true , 
+	the rate is 0.02 ;</Actions>
+            </StartTask>
+            <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="task_4" Ordering="Default">
+                <RuleList>
+                    <Package Name="Approval"/>
+                </RuleList>
+            </RuleTask>
+        </TaskList>
+        <NodeList>
+            <TaskNode Identifier="node_1" Task="task_1"/>
+            <TaskNode Identifier="node_2" Task="task_2"/>
+            <TaskNode Identifier="node_3" Task="task_3"/>
+            <TaskNode Identifier="node_0" Task="task_0"/>
+            <TaskNode Identifier="node_4" Task="task_4"/>
+        </NodeList>
+        <TransitionList>
+            <Transition Identifier="transition_3" Source="node_3" Target="node_2"/>
+            <Transition Identifier="transition_0" Source="node_0" Target="node_1"/>
+            <Transition Identifier="transition_4" Source="node_1" Target="node_4"/>
+            <Transition Identifier="transition_5" Source="node_4" Target="node_3">
+                <Conditions Language="bal">'the report' is approved </Conditions>
+            </Transition>
+            <Transition Identifier="transition_6" Source="node_4" Target="node_2"/>
+        </TransitionList>
+    </Body>
+    <Resources>
+        <ResourceSet Locale="en_US">
+            <Data Name="node_3#label">Insurance</Data>
+            <Data Name="node_4#label">Approval</Data>
+            <Data Name="transition_5#label">report approved</Data>
+            <Data Name="node_1#label">Eligibility</Data>
+        </ResourceSet>
+    </Resources>
+</Ruleflow></rfModel>
+</ilog.rules.studio.model.ruleflow:RuleFlow>

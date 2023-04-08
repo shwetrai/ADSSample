@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Approval</name>
+  <uuid>83deea99-e72d-4950-857a-931e6c5f55a9</uuid>
+  <documentation><![CDATA[Decides if the loan can be approved based on the previous computation.]]></documentation>
+</ilog.rules.studio.model.base:RulePackage>

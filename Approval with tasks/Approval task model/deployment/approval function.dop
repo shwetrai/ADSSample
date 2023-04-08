@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="function" usingRuleflow="true" ruleflowName="Approval main flow" targetRuleProjectName="Approval task model">
+  <name>approval function</name>
+  <uuid>25323097-48f6-431d-934e-16474dff9736</uuid>
+  <description><![CDATA[]]></description>
+  <referencedVariables variableName="loan" variableSetName="Variables">
+    <variableSet href="../rules/Variables.var#fe861435-54db-4ae1-b19a-1e3027f66bca"/>
+  </referencedVariables>
+  <referencedVariables variableName="borrower" variableSetName="Variables">
+    <variableSet href="../rules/Variables.var#fe861435-54db-4ae1-b19a-1e3027f66bca"/>
+  </referencedVariables>
+  <referencedVariables variableName="report" variableSetName="Variables" direction="OUT">
+    <variableSet href="../rules/Variables.var#fe861435-54db-4ae1-b19a-1e3027f66bca"/>
+  </referencedVariables>
+  <ruleflow href="../rules/Approval%20main%20flow.rfl#f31d7d2a-b650-4aba-bc9e-8e71a22f3d76"/>
+  <targetRuleProject href="../../Approval%20task%20model#b4bbee96-8aab-4fcc-9bd2-660bf3aa4936"/>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["approvalWithTasks"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

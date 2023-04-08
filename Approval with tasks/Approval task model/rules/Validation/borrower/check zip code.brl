@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>check zip code</name>
+  <uuid>b9603dde-0625-4c0b-852a-c96ac6ea8e85</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+    set 'zip length' to 5 ;
+if
+    the zip code of 'the borrower' is null
+    or the length of the zip code of 'the borrower' does not equal 'zip length' 
+then
+	'the report' does not get data validated ;
+    'the report' does not get approved ; 
+    add "The borrower's Zip Code should have " + 'zip length' + " digits" to the messages of 'the report' ; 
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

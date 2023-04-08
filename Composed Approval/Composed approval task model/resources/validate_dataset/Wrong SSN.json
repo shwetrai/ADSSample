@@ -1,0 +1,29 @@
+{
+  "operationId" : "a49a41a0-3b66-4074-8924-273399162bca",
+  "body" : {
+    "loan" : {
+      "amount" : 10000,
+      "loanToValue" : 1.5,
+      "numberOfMonthlyPayments" : 1000,
+      "startDate" : null
+    },
+    "borrower" : {
+      "SSN" : {
+        "areaNumber" : "123",
+        "groupCode" : "5",
+        "serialNumber" : "6789"
+      },
+      "birthDate" : null,
+      "creditScore" : 1000,
+      "firstName" : "John",
+      "lastName" : "Doe",
+      "latestBankruptcy" : {
+        "chapter" : 1000,
+        "date" : null,
+        "reason" : "<reason>"
+      },
+      "yearlyIncome" : 1000,
+      "zipCode" : "12345"
+    }
+  }
+}

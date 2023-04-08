@@ -1,0 +1,29 @@
+{
+  "operationId" : "25323097-48f6-431d-934e-16474dff9736",
+  "body" : {
+    "loan" : {
+      "amount" : 1000,
+      "loanToValue" : 1.5,
+      "numberOfMonthlyPayments" : 1000,
+      "startDate" : null
+    },
+    "borrower" : {
+      "SSN" : {
+        "areaNumber" : "123",
+        "groupCode" : "456",
+        "serialNumber" : "789"
+      },
+      "birthDate" : null,
+      "creditScore" : 1000,
+      "firstName" : null,
+      "lastName" : null,
+      "latestBankruptcy" : {
+        "chapter" : 1000,
+        "date" : null,
+        "reason" : "<reason>"
+      },
+      "yearlyIncome" : 1000,
+      "zipCode" : "12345"
+    }
+  }
+}

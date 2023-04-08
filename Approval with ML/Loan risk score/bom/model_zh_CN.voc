@@ -1,0 +1,57 @@
+
+# _082392706.banking.approval_with_ml.loanriskscore.Error
+_082392706.banking.approval_with_ml.loanriskscore.Error#concept.label = 输出错误
+_082392706.banking.approval_with_ml.loanriskscore.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = 新建 {输出错误}符合条件：{0, 代码} {1, 讯息} 
+_082392706.banking.approval_with_ml.loanriskscore.Error.code#phrase.action = 设置{this}的当前 代码为{代码}
+_082392706.banking.approval_with_ml.loanriskscore.Error.code#phrase.navigation = {this} 的{代码}
+_082392706.banking.approval_with_ml.loanriskscore.Error.message#phrase.action = 设置{this}的当前 讯息为{讯息}
+_082392706.banking.approval_with_ml.loanriskscore.Error.message#phrase.navigation = {this} 的{讯息}
+
+# _082392706.banking.approval_with_ml.loanriskscore.Input
+_082392706.banking.approval_with_ml.loanriskscore.Input#concept.label = ML 模型输入
+_082392706.banking.approval_with_ml.loanriskscore.Input.Input(double,double,double,double,double,double)#phrase.navigation = 新建 {ML 模型输入}符合条件：{0, creditscore} {1, income} {2, loanamount} {3, monthduration} {4, rate} {5, yearlyreimbursement} 
+_082392706.banking.approval_with_ml.loanriskscore.Input.creditscore#phrase.action = 设置{this}的当前 creditscore为{creditscore}
+_082392706.banking.approval_with_ml.loanriskscore.Input.creditscore#phrase.addition_setter = 加{creditscore}到{this}的属性当前 creditscore里
+_082392706.banking.approval_with_ml.loanriskscore.Input.creditscore#phrase.navigation = {this} 的{creditscore}
+_082392706.banking.approval_with_ml.loanriskscore.Input.creditscore#phrase.subtraction_setter = 减{creditscore}到{this}的属性当前 creditscore里
+_082392706.banking.approval_with_ml.loanriskscore.Input.income#phrase.action = 设置{this}的当前 income为{income}
+_082392706.banking.approval_with_ml.loanriskscore.Input.income#phrase.addition_setter = 加{income}到{this}的属性当前 income里
+_082392706.banking.approval_with_ml.loanriskscore.Input.income#phrase.navigation = {this} 的{income}
+_082392706.banking.approval_with_ml.loanriskscore.Input.income#phrase.subtraction_setter = 减{income}到{this}的属性当前 income里
+_082392706.banking.approval_with_ml.loanriskscore.Input.loanamount#phrase.action = 设置{this}的当前 loanamount为{loanamount}
+_082392706.banking.approval_with_ml.loanriskscore.Input.loanamount#phrase.addition_setter = 加{loanamount}到{this}的属性当前 loanamount里
+_082392706.banking.approval_with_ml.loanriskscore.Input.loanamount#phrase.navigation = {this} 的{loanamount}
+_082392706.banking.approval_with_ml.loanriskscore.Input.loanamount#phrase.subtraction_setter = 减{loanamount}到{this}的属性当前 loanamount里
+_082392706.banking.approval_with_ml.loanriskscore.Input.monthduration#phrase.action = 设置{this}的当前 monthduration为{monthduration}
+_082392706.banking.approval_with_ml.loanriskscore.Input.monthduration#phrase.addition_setter = 加{monthduration}到{this}的属性当前 monthduration里
+_082392706.banking.approval_with_ml.loanriskscore.Input.monthduration#phrase.navigation = {this} 的{monthduration}
+_082392706.banking.approval_with_ml.loanriskscore.Input.monthduration#phrase.subtraction_setter = 减{monthduration}到{this}的属性当前 monthduration里
+_082392706.banking.approval_with_ml.loanriskscore.Input.rate#phrase.action = 设置{this}的当前 rate为{rate}
+_082392706.banking.approval_with_ml.loanriskscore.Input.rate#phrase.addition_setter = 加{rate}到{this}的属性当前 rate里
+_082392706.banking.approval_with_ml.loanriskscore.Input.rate#phrase.navigation = {this} 的{rate}
+_082392706.banking.approval_with_ml.loanriskscore.Input.rate#phrase.subtraction_setter = 减{rate}到{this}的属性当前 rate里
+_082392706.banking.approval_with_ml.loanriskscore.Input.yearlyreimbursement#phrase.action = 设置{this}的当前 yearlyreimbursement为{yearlyreimbursement}
+_082392706.banking.approval_with_ml.loanriskscore.Input.yearlyreimbursement#phrase.addition_setter = 加{yearlyreimbursement}到{this}的属性当前 yearlyreimbursement里
+_082392706.banking.approval_with_ml.loanriskscore.Input.yearlyreimbursement#phrase.navigation = {this} 的{yearlyreimbursement}
+_082392706.banking.approval_with_ml.loanriskscore.Input.yearlyreimbursement#phrase.subtraction_setter = 减{yearlyreimbursement}到{this}的属性当前 yearlyreimbursement里
+
+# _082392706.banking.approval_with_ml.loanriskscore.Output
+_082392706.banking.approval_with_ml.loanriskscore.Output#concept.label = ML 模型输出
+_082392706.banking.approval_with_ml.loanriskscore.Output.Output(java.lang.Double,java.lang.Double,java.lang.Double)#phrase.navigation = 新建 {ML 模型输出}符合条件：{0, predicted paymentdefault} {1, probability0} {2, probability1} 
+_082392706.banking.approval_with_ml.loanriskscore.Output.error#phrase.action = 设置{this}的当前 错误为{错误}
+_082392706.banking.approval_with_ml.loanriskscore.Output.error#phrase.clearer = 删除当前 错误的{this}
+_082392706.banking.approval_with_ml.loanriskscore.Output.error#phrase.navigation = {this} 的{错误}
+_082392706.banking.approval_with_ml.loanriskscore.Output.inError()#phrase.navigation = {this} 是当前 出错
+_082392706.banking.approval_with_ml.loanriskscore.Output.predictedPaymentdefault#phrase.action = 设置{this}的当前 predicted paymentdefault为{predicted paymentdefault}
+_082392706.banking.approval_with_ml.loanriskscore.Output.predictedPaymentdefault#phrase.addition_setter = 加{predicted paymentdefault}到{this}的属性当前 predicted paymentdefault里
+_082392706.banking.approval_with_ml.loanriskscore.Output.predictedPaymentdefault#phrase.navigation = {this} 的{predicted paymentdefault}
+_082392706.banking.approval_with_ml.loanriskscore.Output.predictedPaymentdefault#phrase.subtraction_setter = 减{predicted paymentdefault}到{this}的属性当前 predicted paymentdefault里
+_082392706.banking.approval_with_ml.loanriskscore.Output.probability0#phrase.action = 设置{this}的当前 probability0为{probability0}
+_082392706.banking.approval_with_ml.loanriskscore.Output.probability0#phrase.addition_setter = 加{probability0}到{this}的属性当前 probability0里
+_082392706.banking.approval_with_ml.loanriskscore.Output.probability0#phrase.navigation = {this} 的{probability0}
+_082392706.banking.approval_with_ml.loanriskscore.Output.probability0#phrase.subtraction_setter = 减{probability0}到{this}的属性当前 probability0里
+_082392706.banking.approval_with_ml.loanriskscore.Output.probability1#phrase.action = 设置{this}的当前 probability1为{probability1}
+_082392706.banking.approval_with_ml.loanriskscore.Output.probability1#phrase.addition_setter = 加{probability1}到{this}的属性当前 probability1里
+_082392706.banking.approval_with_ml.loanriskscore.Output.probability1#phrase.navigation = {this} 的{probability1}
+_082392706.banking.approval_with_ml.loanriskscore.Output.probability1#phrase.subtraction_setter = 减{probability1}到{this}的属性当前 probability1里
+_082392706.banking.approval_with_ml.loanriskscore.Output.run(_082392706.banking.approval_with_ml.loanriskscore.Input)#phrase.navigation = predict({0})

@@ -1,0 +1,24 @@
+{
+  "operationId" : "25323097-48f6-431d-934e-16474dff9736",
+  "body" : {
+    "loan" : {
+      "amount" : 100,
+      "loanToValue" : 0.5,
+      "numberOfMonthlyPayments" : 4,
+      "startDate" : "2005-06-01T00:00:00Z"
+    },
+    "borrower" : {
+      "SSN" : {
+        "areaNumber" : "123",
+        "groupCode" : "45",
+        "serialNumber" : "6789"
+      },
+      "firstName" : "John",
+      "lastName" : "Doe",
+      "birthDate" : "1968-05-12T00:00:00Z",
+      "yearlyIncome" : 1000,
+      "zipCode" : "91320",
+      "creditScore" : 100
+    }
+  }
+}

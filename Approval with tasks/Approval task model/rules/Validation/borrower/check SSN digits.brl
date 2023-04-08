@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>check SSN digits</name>
+  <uuid>a995e0f8-0b53-4ee0-8570-ed0e9fa30217</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+    set 'digits' to 9 ;
+    set 'areanumber' to 3 ;
+    set 'groupcode' to 2 ;
+    set 'serialnumber' to 4 ;
+    set 'SSNdigits' to (the length of the area number of the SSN of 'the borrower')
+    + (the length of the area number of the SSN of 'the borrower')
+     + (the length of the area number of the SSN of 'the borrower');
+if
+    'SSNdigits'  does not equal digits 
+    or the length of the area number of the SSN of 'the borrower' does not equal areanumber 
+    or the length of the group code of the SSN of 'the borrower' does not equal groupcode 
+    or the length of the serial number of the SSN of 'the borrower' does not equal serialnumber 
+then
+	'the report' does not get data validated ;
+    'the report' does not get approved ; 
+    add "The borrower's SSN should be formatted with 3-2-4 digits" to the messages of 'the report' ; ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

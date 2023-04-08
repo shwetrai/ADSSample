@@ -1,0 +1,25 @@
+{
+  "operationId" : "57758c4f-c279-4033-9f5b-0023b07c946c",
+  "body" : {
+    "loan" : {
+      "rate" : 0.7,
+      "amount" : 520000,
+      "numberOfMonthlyPayments" : 72,
+      "startDate" : "2020-06-01"
+    },
+    "borrower" : {
+      "SSN" : {
+        "areaNumber" : "123",
+        "groupCode" : "45",
+        "serialNumber" : "6789"
+      },
+      "firstName" : "Paul",
+      "lastName" : "Smith",
+      "birthDate" : "1968-05-12",
+      "yearlyIncome" : 100000,
+      "zipCode" : "91320",
+      "creditScore" : 200
+    },
+    "currentTime" : "2020-02-03"
+  }
+}

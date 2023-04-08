@@ -1,0 +1,30 @@
+{
+  "operationId" : "57758c4f-c279-4033-9f5b-0023b07c946c",
+  "body" : {
+    "loan" : {
+      "amount" : 185000,
+      "numberOfMonthlyPayments" : 72,
+      "startDate" : "2020-06-01T00:00:00Z",
+      "loanToValue" : 0.7
+    },
+    "borrower" : {
+      "SSN" : {
+        "areaNumber" : "123",
+        "groupCode" : "45",
+        "serialNumber" : "6789"
+      },
+      "firstName" : "John",
+      "lastName" : "Doe",
+      "latestBankruptcy" : {
+        "date" : "2019-03-10T00:00:00Z",
+        "chapter" : 7,
+        "reason" : "Unemployment"
+      },
+      "yearlyIncome" : 100000,
+      "zipCode" : "91320",
+      "creditScore" : 500,
+      "birthDate" : "1968-05-12T00:00:00Z"
+    },
+    "currentTime" : "2020-02-04T08:41:21.242Z"
+  }
+}

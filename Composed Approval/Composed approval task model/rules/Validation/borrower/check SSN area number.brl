@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>check SSN area number</name>
+  <uuid>746e2552-734d-4709-93ab-3ae936e9ba22</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if 
+    the area number of the SSN of 'the borrower' is one of { "000" , "666" } 
+then 
+	'the report' does not get data validated;
+	set the approval of 'the report' to a new approval where 
+	approved is false , 
+	the message is "The borrower's SSN area number cannot be " +  the area number of the SSN of 'the borrower';
+    print "rejected with The borrower's SSN area number cannot be " + the area number of the SSN of 'the borrower';
+else 
+    print "The borrower's SSN area number belongs to an authorized area."; 
+
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><ilog.rules.studio.model.base:VariableSet xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore" xmlns:xmi="http://www.omg.org/XMI" xmi:version="2.0">
+  <name>Variables</name>
+  <uuid>270ebf65-884f-430e-8f2f-9fb290a815af</uuid>
+  <variables initialValue="" jsonName="" name="loan" type="decisions.techpreview_samples.loan_validation.loanvalidationdata.Loan" verbalization="the loan"/>
+  <variables initialValue="" jsonName="" name="borrower" type="decisions.techpreview_samples.loan_validation.loanvalidationdata.Borrower" verbalization="the borrower"/>
+  <variables initialValue="" jsonName="" name="report" type="decisions.techpreview_samples.loan_validation.loanvalidationdata.Report" verbalization="the report"/>
+  <variables initialValue="" jsonName="" name="insurance" type="decisions.techpreview_samples.loan_validation.loanvalidationdata.Insurance" verbalization="the insurance"/>
+  <variables initialValue="" jsonName="" name="approval" type="decisions.techpreview_samples.loan_validation.loanvalidationdata.Approval" verbalization="the approval"/>
+</ilog.rules.studio.model.base:VariableSet>

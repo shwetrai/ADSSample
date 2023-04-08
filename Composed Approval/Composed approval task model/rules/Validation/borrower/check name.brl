@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>check name</name>
+  <uuid>745a93b0-a7b3-4687-84a7-3f02765e0217</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	the last name of 'the borrower' is empty 
+then
+	'the report' does not get data validated;
+	set the approval of 'the report' to a new approval where 
+	approved is false, 
+	the message is "The borrower's name cannot be empty";
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

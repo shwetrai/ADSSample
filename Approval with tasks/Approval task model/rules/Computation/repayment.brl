@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>repayment</name>
+  <uuid>427e92ec-0487-4a89-81e4-8992deb9ca43</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+    set 'amount' to the amount of 'the loan' ;
+    set 'duration' to the number of monthly payments of 'the loan' ;
+    set 'monthly rate' to (the yearly interest rate of 'the report') / 12 ;
+then
+    set the monthly repayment of 'the report' to 'monthly rate' * 'amount'
+                                         / (1 - pow ( 1 + 'monthly rate' , -duration)) ;
+    print "monthly repayment calculated." ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

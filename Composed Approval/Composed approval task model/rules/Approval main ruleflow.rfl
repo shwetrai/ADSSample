@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.ruleflow:RuleFlow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.ruleflow="http://ilog.rules.studio/model/ruleflow.ecore">
+  <name>Approval main ruleflow</name>
+  <uuid>f45bdd7c-7fce-435e-8a84-f463164e1c8c</uuid>
+  <locale>en_US</locale>
+  <rfModel><Ruleflow xmlns="http://schemas.ilog.com/Rules/7.0/Ruleflow">
+    <Body>
+        <TaskList>
+            <StartTask Identifier="task_0"/>
+            <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="task_1" Ordering="Default">
+                <RuleList>
+                    <Package Name="Validation"/>
+                </RuleList>
+            </RuleTask>
+            <StopTask Identifier="task_2"/>
+            <ActionTask Identifier="task_3">
+                <Actions Language="bal"><![CDATA[set 'the report' to a new report where the loan is 'the loan' , 
+the borrower is 'the borrower',
+data validated is true ;]]></Actions>
+            </ActionTask>
+            <FunctionTask Identifier="task_4">
+                <FinalActions Language="bal"><![CDATA[set the insurance of 'the report' to 'the insurance' ; 
+set the approval of 'the report' to 'the approval';
+	]]></FinalActions>
+                <Invocation FunctionIdentifier="decisions.techpreview_samples.loan_validation.loanvalidationdecisionmodel.Eligibility_decision_model">
+                    <InputBindings>
+                        <Binding Language="bal" Name="loan"><![CDATA['the loan' ]]></Binding>
+                        <Binding Language="bal" Name="borrower"><![CDATA['the borrower' ]]></Binding>
+                    </InputBindings>
+                    <OutputBindings>
+                        <Binding Language="bal" Name="approval"><![CDATA[Approval of 'eligibility decision model' ]]></Binding>
+                        <Binding Language="bal" Name="insurance"><![CDATA[Insurance of 'eligibility decision model' ]]></Binding>
+                    </OutputBindings>
+                </Invocation>
+            </FunctionTask>
+        </TaskList>
+        <NodeList>
+            <TaskNode Identifier="node_0" Task="task_0"/>
+            <TaskNode Identifier="node_1" Task="task_1"/>
+            <TaskNode Identifier="node_2" Task="task_2"/>
+            <TaskNode Identifier="node_3" Task="task_3"/>
+            <TaskNode Identifier="node_4" Task="task_4"/>
+        </NodeList>
+        <TransitionList>
+            <Transition Identifier="transition_2" Source="node_0" Target="node_3"/>
+            <Transition Identifier="transition_3" Source="node_3" Target="node_1"/>
+            <Transition Identifier="transition_4" Source="node_1" Target="node_4">
+                <Conditions Language="bal"><![CDATA[ 'the report' is data validated ]]></Conditions>
+            </Transition>
+            <Transition Identifier="transition_5" Source="node_4" Target="node_2"/>
+            <Transition Identifier="transition_6" Source="node_1" Target="node_2"/>
+        </TransitionList>
+    </Body>
+    <Resources>
+        <ResourceSet Locale="en_US">
+            <Data Name="node_4#documentation"><![CDATA[Computes the eligibility of the loan base on the valid input data.
+
+Use intermediate variables to get the ouput of the decision model. The final action of this task computes the final report output from those intermediate variables.]]></Data>
+            <Data Name="node_3#label"><![CDATA[Initialisation]]></Data>
+            <Data Name="node_4#label"><![CDATA[Eligibility model]]></Data>
+            <Data Name="node_1#documentation"><![CDATA[Checks if the data provided  as input are valid.]]></Data>
+            <Data Name="node_1#label"><![CDATA[Validation]]></Data>
+            <Data Name="node_3#documentation"><![CDATA[Initialize the report output value by setting the input values loan and borrower.]]></Data>
+            <Data Name="transition_4#label"><![CDATA[data validated]]></Data>
+        </ResourceSet>
+    </Resources>
+</Ruleflow></rfModel>
+</ilog.rules.studio.model.ruleflow:RuleFlow>

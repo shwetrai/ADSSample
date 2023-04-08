@@ -1,0 +1,57 @@
+
+# _082392706.banking.approval_with_ml.loanriskscore.Error
+_082392706.banking.approval_with_ml.loanriskscore.Error#concept.label = 出力エラー
+_082392706.banking.approval_with_ml.loanriskscore.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = 新規の {出力エラー}ここで{0, コード} {1, メッセージ} 
+_082392706.banking.approval_with_ml.loanriskscore.Error.code#phrase.action = {this}のコードを{コード}とする
+_082392706.banking.approval_with_ml.loanriskscore.Error.code#phrase.navigation = {this}の{コード}
+_082392706.banking.approval_with_ml.loanriskscore.Error.message#phrase.action = {this}のメッセージを{メッセージ}とする
+_082392706.banking.approval_with_ml.loanriskscore.Error.message#phrase.navigation = {this}の{メッセージ}
+
+# _082392706.banking.approval_with_ml.loanriskscore.Input
+_082392706.banking.approval_with_ml.loanriskscore.Input#concept.label = ML モデル入力
+_082392706.banking.approval_with_ml.loanriskscore.Input.Input(double,double,double,double,double,double)#phrase.navigation = 新規の {ML モデル入力}ここで{0, creditscore} {1, income} {2, loanamount} {3, monthduration} {4, rate} {5, yearlyreimbursement} 
+_082392706.banking.approval_with_ml.loanriskscore.Input.creditscore#phrase.action = {this}のcreditscoreを{creditscore}とする
+_082392706.banking.approval_with_ml.loanriskscore.Input.creditscore#phrase.addition_setter = {this}のcreditscoreに{creditscore}を追加する
+_082392706.banking.approval_with_ml.loanriskscore.Input.creditscore#phrase.navigation = {this}の{creditscore}
+_082392706.banking.approval_with_ml.loanriskscore.Input.creditscore#phrase.subtraction_setter = {this}のcreditscoreから{creditscore}を引く
+_082392706.banking.approval_with_ml.loanriskscore.Input.income#phrase.action = {this}のincomeを{income}とする
+_082392706.banking.approval_with_ml.loanriskscore.Input.income#phrase.addition_setter = {this}のincomeに{income}を追加する
+_082392706.banking.approval_with_ml.loanriskscore.Input.income#phrase.navigation = {this}の{income}
+_082392706.banking.approval_with_ml.loanriskscore.Input.income#phrase.subtraction_setter = {this}のincomeから{income}を引く
+_082392706.banking.approval_with_ml.loanriskscore.Input.loanamount#phrase.action = {this}のloanamountを{loanamount}とする
+_082392706.banking.approval_with_ml.loanriskscore.Input.loanamount#phrase.addition_setter = {this}のloanamountに{loanamount}を追加する
+_082392706.banking.approval_with_ml.loanriskscore.Input.loanamount#phrase.navigation = {this}の{loanamount}
+_082392706.banking.approval_with_ml.loanriskscore.Input.loanamount#phrase.subtraction_setter = {this}のloanamountから{loanamount}を引く
+_082392706.banking.approval_with_ml.loanriskscore.Input.monthduration#phrase.action = {this}のmonthdurationを{monthduration}とする
+_082392706.banking.approval_with_ml.loanriskscore.Input.monthduration#phrase.addition_setter = {this}のmonthdurationに{monthduration}を追加する
+_082392706.banking.approval_with_ml.loanriskscore.Input.monthduration#phrase.navigation = {this}の{monthduration}
+_082392706.banking.approval_with_ml.loanriskscore.Input.monthduration#phrase.subtraction_setter = {this}のmonthdurationから{monthduration}を引く
+_082392706.banking.approval_with_ml.loanriskscore.Input.rate#phrase.action = {this}のrateを{rate}とする
+_082392706.banking.approval_with_ml.loanriskscore.Input.rate#phrase.addition_setter = {this}のrateに{rate}を追加する
+_082392706.banking.approval_with_ml.loanriskscore.Input.rate#phrase.navigation = {this}の{rate}
+_082392706.banking.approval_with_ml.loanriskscore.Input.rate#phrase.subtraction_setter = {this}のrateから{rate}を引く
+_082392706.banking.approval_with_ml.loanriskscore.Input.yearlyreimbursement#phrase.action = {this}のyearlyreimbursementを{yearlyreimbursement}とする
+_082392706.banking.approval_with_ml.loanriskscore.Input.yearlyreimbursement#phrase.addition_setter = {this}のyearlyreimbursementに{yearlyreimbursement}を追加する
+_082392706.banking.approval_with_ml.loanriskscore.Input.yearlyreimbursement#phrase.navigation = {this}の{yearlyreimbursement}
+_082392706.banking.approval_with_ml.loanriskscore.Input.yearlyreimbursement#phrase.subtraction_setter = {this}のyearlyreimbursementから{yearlyreimbursement}を引く
+
+# _082392706.banking.approval_with_ml.loanriskscore.Output
+_082392706.banking.approval_with_ml.loanriskscore.Output#concept.label = ML モデル出力
+_082392706.banking.approval_with_ml.loanriskscore.Output.Output(java.lang.Double,java.lang.Double,java.lang.Double)#phrase.navigation = 新規の {ML モデル出力}ここで{0, predicted paymentdefault} {1, probability0} {2, probability1} 
+_082392706.banking.approval_with_ml.loanriskscore.Output.error#phrase.action = {this}のエラーを{エラー}とする
+_082392706.banking.approval_with_ml.loanriskscore.Output.error#phrase.clearer = エラー{this}をクリアする
+_082392706.banking.approval_with_ml.loanriskscore.Output.error#phrase.navigation = {this}の{エラー}
+_082392706.banking.approval_with_ml.loanriskscore.Output.inError()#phrase.navigation = {this}はエラーの
+_082392706.banking.approval_with_ml.loanriskscore.Output.predictedPaymentdefault#phrase.action = {this}のpredicted paymentdefaultを{predicted paymentdefault}とする
+_082392706.banking.approval_with_ml.loanriskscore.Output.predictedPaymentdefault#phrase.addition_setter = {this}のpredicted paymentdefaultに{predicted paymentdefault}を追加する
+_082392706.banking.approval_with_ml.loanriskscore.Output.predictedPaymentdefault#phrase.navigation = {this}の{predicted paymentdefault}
+_082392706.banking.approval_with_ml.loanriskscore.Output.predictedPaymentdefault#phrase.subtraction_setter = {this}のpredicted paymentdefaultから{predicted paymentdefault}を引く
+_082392706.banking.approval_with_ml.loanriskscore.Output.probability0#phrase.action = {this}のprobability0を{probability0}とする
+_082392706.banking.approval_with_ml.loanriskscore.Output.probability0#phrase.addition_setter = {this}のprobability0に{probability0}を追加する
+_082392706.banking.approval_with_ml.loanriskscore.Output.probability0#phrase.navigation = {this}の{probability0}
+_082392706.banking.approval_with_ml.loanriskscore.Output.probability0#phrase.subtraction_setter = {this}のprobability0から{probability0}を引く
+_082392706.banking.approval_with_ml.loanriskscore.Output.probability1#phrase.action = {this}のprobability1を{probability1}とする
+_082392706.banking.approval_with_ml.loanriskscore.Output.probability1#phrase.addition_setter = {this}のprobability1に{probability1}を追加する
+_082392706.banking.approval_with_ml.loanriskscore.Output.probability1#phrase.navigation = {this}の{probability1}
+_082392706.banking.approval_with_ml.loanriskscore.Output.probability1#phrase.subtraction_setter = {this}のprobability1から{probability1}を引く
+_082392706.banking.approval_with_ml.loanriskscore.Output.run(_082392706.banking.approval_with_ml.loanriskscore.Input)#phrase.navigation = predict({0})

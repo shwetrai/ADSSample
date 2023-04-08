@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Preparation</name>
+  <uuid>6f613628-8520-430c-a196-a0a3ef7b0259</uuid>
+  <documentation><![CDATA[Prepares the computation of the eventual loan characteristics.]]></documentation>
+</ilog.rules.studio.model.base:RulePackage>

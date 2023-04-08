@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.ruleflow:RuleFlow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.ruleflow="http://ilog.rules.studio/model/ruleflow.ecore">
+  <name>Approval main flow</name>
+  <uuid>f31d7d2a-b650-4aba-bc9e-8e71a22f3d76</uuid>
+  <documentation><![CDATA[Main ruleflow delegates the eligibility part to the Eligibility flow.]]></documentation>
+  <locale>en_US</locale>
+  <rfModel><Ruleflow xmlns="http://schemas.ilog.com/Rules/7.0/Ruleflow">
+    <Body>
+        <TaskList>
+            <StartTask Identifier="task_0"/>
+            <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="task_1" Ordering="Default">
+                <RuleList>
+                    <Package Name="Validation"/>
+                </RuleList>
+            </RuleTask>
+            <StopTask Identifier="task_2">
+                <Actions Language="bal">print "results";
+</Actions>
+            </StopTask>
+            <ActionTask Identifier="task_3">
+                <Actions Language="bal">set 'the report' to a new report where approved is true , the loan is 'the loan' , the borrower is 'the borrower' , data validated is true;
+</Actions>
+            </ActionTask>
+            <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="task_4" Ordering="Default">
+                <RuleList>
+                    <Package Name="Preparation"/>
+                </RuleList>
+            </RuleTask>
+            <SubflowTask Identifier="task_5" Uuid="f98d9740-439b-412d-a8ab-e9826c3467af"/>
+            <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="task_6" Ordering="Default">
+                <RuleList>
+                    <Package Name="Computation"/>
+                </RuleList>
+            </RuleTask>
+        </TaskList>
+        <NodeList>
+            <TaskNode Identifier="node_0" Task="task_0"/>
+            <TaskNode Identifier="node_1" Task="task_1"/>
+            <TaskNode Identifier="node_2" Task="task_2"/>
+            <TaskNode Identifier="node_3" Task="task_3"/>
+            <TaskNode Identifier="node_4" Task="task_4"/>
+            <TaskNode Identifier="node_5" Task="task_5"/>
+            <TaskNode Identifier="node_6" Task="task_6"/>
+        </NodeList>
+        <TransitionList>
+            <Transition Identifier="transition_1" Source="node_1" Target="node_2"/>
+            <Transition Identifier="transition_2" Source="node_0" Target="node_3"/>
+            <Transition Identifier="transition_3" Source="node_3" Target="node_1"/>
+            <Transition Identifier="transition_4" Source="node_1" Target="node_4">
+                <Conditions Language="bal">'the report' is data validated 
+</Conditions>
+            </Transition>
+            <Transition Identifier="transition_7" Source="node_5" Target="node_2"/>
+            <Transition Identifier="transition_8" Source="node_4" Target="node_6"/>
+            <Transition Identifier="transition_6" Source="node_6" Target="node_5"/>
+        </TransitionList>
+    </Body>
+    <Resources>
+        <ResourceSet Locale="en_US">
+            <Data Name="node_3#label">Init result</Data>
+            <Data Name="node_4#label">Preparation</Data>
+            <Data Name="node_5#label">Eligibility</Data>
+            <Data Name="node_1#label">Validation</Data>
+            <Data Name="node_6#label">Computation</Data>
+            <Data Name="transition_4#label">data valid</Data>
+        </ResourceSet>
+    </Resources>
+</Ruleflow></rfModel>
+</ilog.rules.studio.model.ruleflow:RuleFlow>

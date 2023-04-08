@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="Loan-validation-task" usingRuleflow="true" ruleflowName="Loan validation task" targetRuleProjectName="Composed approval task model">
+  <name>approval function</name>
+  <uuid>a49a41a0-3b66-4074-8924-273399162bca</uuid>
+  <referencedVariables variableName="loan" variableSetName="Variables">
+    <variableSet href="../rules/Variables.var#270ebf65-884f-430e-8f2f-9fb290a815af"/>
+  </referencedVariables>
+  <referencedVariables variableName="borrower" variableSetName="Variables">
+    <variableSet href="../rules/Variables.var#270ebf65-884f-430e-8f2f-9fb290a815af"/>
+  </referencedVariables>
+  <referencedVariables variableName="report" variableSetName="Variables" direction="OUT">
+    <variableSet href="../rules/Variables.var#270ebf65-884f-430e-8f2f-9fb290a815af"/>
+  </referencedVariables>
+  <ruleflow href="../rules/Loan%20validation%20task.rfl#f45bdd7c-7fce-435e-8a84-f463164e1c8c"/>
+  <targetRuleProject href="../../Composed%20approval%20task%20model#1edd853f-c4d4-4653-9527-2179b3b7653d"/>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["composedApproval"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

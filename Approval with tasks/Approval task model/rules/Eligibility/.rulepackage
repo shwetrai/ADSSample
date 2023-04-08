@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Eligibility</name>
+  <uuid>be566f52-d515-47a4-be37-77f3e08ae0bd</uuid>
+  <documentation><![CDATA[Checks the eligibility, computes the grade of the eventual loan.]]></documentation>
+</ilog.rules.studio.model.base:RulePackage>

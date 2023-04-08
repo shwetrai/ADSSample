@@ -1,0 +1,57 @@
+
+# _082392706.banking.approval_with_ml.loanriskscore.Error
+_082392706.banking.approval_with_ml.loanriskscore.Error#concept.label = Ausgabefehler
+_082392706.banking.approval_with_ml.loanriskscore.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = ein neuer {Ausgabefehler} wobei {0, Code} {1, Nachricht} 
+_082392706.banking.approval_with_ml.loanriskscore.Error.code#phrase.action = setze das Code von {this} auf {Code}
+_082392706.banking.approval_with_ml.loanriskscore.Error.code#phrase.navigation = {Code} von {this}
+_082392706.banking.approval_with_ml.loanriskscore.Error.message#phrase.action = setze das Nachricht von {this} auf {Nachricht}
+_082392706.banking.approval_with_ml.loanriskscore.Error.message#phrase.navigation = {Nachricht} von {this}
+
+# _082392706.banking.approval_with_ml.loanriskscore.Input
+_082392706.banking.approval_with_ml.loanriskscore.Input#concept.label = ML-Modelleingabe
+_082392706.banking.approval_with_ml.loanriskscore.Input.Input(double,double,double,double,double,double)#phrase.navigation = ein neuer {ML-Modelleingabe} wobei {0, creditscore} {1, income} {2, loanamount} {3, monthduration} {4, rate} {5, yearlyreimbursement} 
+_082392706.banking.approval_with_ml.loanriskscore.Input.creditscore#phrase.action = setze das creditscore von {this} auf {creditscore}
+_082392706.banking.approval_with_ml.loanriskscore.Input.creditscore#phrase.addition_setter = füge {creditscore} zu das creditscore von {this} hinzu
+_082392706.banking.approval_with_ml.loanriskscore.Input.creditscore#phrase.navigation = {creditscore} von {this}
+_082392706.banking.approval_with_ml.loanriskscore.Input.creditscore#phrase.subtraction_setter = ziehe {creditscore} von das creditscore von {this} ab
+_082392706.banking.approval_with_ml.loanriskscore.Input.income#phrase.action = setze das income von {this} auf {income}
+_082392706.banking.approval_with_ml.loanriskscore.Input.income#phrase.addition_setter = füge {income} zu das income von {this} hinzu
+_082392706.banking.approval_with_ml.loanriskscore.Input.income#phrase.navigation = {income} von {this}
+_082392706.banking.approval_with_ml.loanriskscore.Input.income#phrase.subtraction_setter = ziehe {income} von das income von {this} ab
+_082392706.banking.approval_with_ml.loanriskscore.Input.loanamount#phrase.action = setze das loanamount von {this} auf {loanamount}
+_082392706.banking.approval_with_ml.loanriskscore.Input.loanamount#phrase.addition_setter = füge {loanamount} zu das loanamount von {this} hinzu
+_082392706.banking.approval_with_ml.loanriskscore.Input.loanamount#phrase.navigation = {loanamount} von {this}
+_082392706.banking.approval_with_ml.loanriskscore.Input.loanamount#phrase.subtraction_setter = ziehe {loanamount} von das loanamount von {this} ab
+_082392706.banking.approval_with_ml.loanriskscore.Input.monthduration#phrase.action = setze das monthduration von {this} auf {monthduration}
+_082392706.banking.approval_with_ml.loanriskscore.Input.monthduration#phrase.addition_setter = füge {monthduration} zu das monthduration von {this} hinzu
+_082392706.banking.approval_with_ml.loanriskscore.Input.monthduration#phrase.navigation = {monthduration} von {this}
+_082392706.banking.approval_with_ml.loanriskscore.Input.monthduration#phrase.subtraction_setter = ziehe {monthduration} von das monthduration von {this} ab
+_082392706.banking.approval_with_ml.loanriskscore.Input.rate#phrase.action = setze das rate von {this} auf {rate}
+_082392706.banking.approval_with_ml.loanriskscore.Input.rate#phrase.addition_setter = füge {rate} zu das rate von {this} hinzu
+_082392706.banking.approval_with_ml.loanriskscore.Input.rate#phrase.navigation = {rate} von {this}
+_082392706.banking.approval_with_ml.loanriskscore.Input.rate#phrase.subtraction_setter = ziehe {rate} von das rate von {this} ab
+_082392706.banking.approval_with_ml.loanriskscore.Input.yearlyreimbursement#phrase.action = setze das yearlyreimbursement von {this} auf {yearlyreimbursement}
+_082392706.banking.approval_with_ml.loanriskscore.Input.yearlyreimbursement#phrase.addition_setter = füge {yearlyreimbursement} zu das yearlyreimbursement von {this} hinzu
+_082392706.banking.approval_with_ml.loanriskscore.Input.yearlyreimbursement#phrase.navigation = {yearlyreimbursement} von {this}
+_082392706.banking.approval_with_ml.loanriskscore.Input.yearlyreimbursement#phrase.subtraction_setter = ziehe {yearlyreimbursement} von das yearlyreimbursement von {this} ab
+
+# _082392706.banking.approval_with_ml.loanriskscore.Output
+_082392706.banking.approval_with_ml.loanriskscore.Output#concept.label = ML-Modellausgabe
+_082392706.banking.approval_with_ml.loanriskscore.Output.Output(java.lang.Double,java.lang.Double,java.lang.Double)#phrase.navigation = ein neuer {ML-Modellausgabe} wobei {0, predicted paymentdefault} {1, probability0} {2, probability1} 
+_082392706.banking.approval_with_ml.loanriskscore.Output.error#phrase.action = setze das Fehler von {this} auf {Fehler}
+_082392706.banking.approval_with_ml.loanriskscore.Output.error#phrase.clearer = lösche das Fehler von {this}
+_082392706.banking.approval_with_ml.loanriskscore.Output.error#phrase.navigation = {Fehler} von {this}
+_082392706.banking.approval_with_ml.loanriskscore.Output.inError()#phrase.navigation = {this} ist im Fehler
+_082392706.banking.approval_with_ml.loanriskscore.Output.predictedPaymentdefault#phrase.action = setze das predicted paymentdefault von {this} auf {predicted paymentdefault}
+_082392706.banking.approval_with_ml.loanriskscore.Output.predictedPaymentdefault#phrase.addition_setter = füge {predicted paymentdefault} zu das predicted paymentdefault von {this} hinzu
+_082392706.banking.approval_with_ml.loanriskscore.Output.predictedPaymentdefault#phrase.navigation = {predicted paymentdefault} von {this}
+_082392706.banking.approval_with_ml.loanriskscore.Output.predictedPaymentdefault#phrase.subtraction_setter = ziehe {predicted paymentdefault} von das predicted paymentdefault von {this} ab
+_082392706.banking.approval_with_ml.loanriskscore.Output.probability0#phrase.action = setze das probability0 von {this} auf {probability0}
+_082392706.banking.approval_with_ml.loanriskscore.Output.probability0#phrase.addition_setter = füge {probability0} zu das probability0 von {this} hinzu
+_082392706.banking.approval_with_ml.loanriskscore.Output.probability0#phrase.navigation = {probability0} von {this}
+_082392706.banking.approval_with_ml.loanriskscore.Output.probability0#phrase.subtraction_setter = ziehe {probability0} von das probability0 von {this} ab
+_082392706.banking.approval_with_ml.loanriskscore.Output.probability1#phrase.action = setze das probability1 von {this} auf {probability1}
+_082392706.banking.approval_with_ml.loanriskscore.Output.probability1#phrase.addition_setter = füge {probability1} zu das probability1 von {this} hinzu
+_082392706.banking.approval_with_ml.loanriskscore.Output.probability1#phrase.navigation = {probability1} von {this}
+_082392706.banking.approval_with_ml.loanriskscore.Output.probability1#phrase.subtraction_setter = ziehe {probability1} von das probability1 von {this} ab
+_082392706.banking.approval_with_ml.loanriskscore.Output.run(_082392706.banking.approval_with_ml.loanriskscore.Input)#phrase.navigation = predict({0})

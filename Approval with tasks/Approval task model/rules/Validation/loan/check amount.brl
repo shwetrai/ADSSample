@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>check amount</name>
+  <uuid>d9d14666-eca6-4a83-a928-5d785c0a7e3f</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions 
+    set maxAmount to 1,000,000;
+if 
+    the amount of 'the loan' is at least  maxAmount 
+then 
+    'the report' does not get data validated;
+    'the report' does not get approved ; 
+    add "The loan cannot exceed " + maxAmount to the messages of 'the report' ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

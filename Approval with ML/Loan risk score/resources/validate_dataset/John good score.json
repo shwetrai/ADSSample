@@ -1,0 +1,24 @@
+{
+  "operationId" : "5fd1f896-13d9-4057-9eeb-90fbc2325638",
+  "body" : {
+    "loan" : {
+      "amount" : 185000,
+      "rate" : 0.7,
+      "numberOfMonthlyPayments" : 72,
+      "startDate" : "2020-06-01"
+    },
+    "borrower" : {
+      "SSN" : {
+        "areaNumber" : "123",
+        "groupCode" : "45",
+        "serialNumber" : "6789"
+      },
+      "firstName" : "John",
+      "lastName" : "Doe",
+      "birthDate" : "1968-05-12",
+      "yearlyIncome" : 1000000,
+      "zipCode" : "91320",
+      "creditScore" : 750
+    }
+  }
+}
