@@ -27,7 +27,7 @@
       "label": "Approved",
       "pointer": "/approval/approved",
       "operator": "=",
-      "expected": true
+      "expected": false
     },
     {
       "label": "Message",
