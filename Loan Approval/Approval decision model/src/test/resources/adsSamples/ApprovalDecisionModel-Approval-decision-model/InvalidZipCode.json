@@ -1,0 +1,39 @@
+{
+  "name": "InvalidZipCode",
+  "input": {
+    "loan": {
+      "amount": 185000,
+      "numberOfMonthlyPayments": 72,
+      "startDate": "2005-06-01T00:00:00Z",
+      "loanToValue": 0.7
+    },
+    "borrower": {
+      "SSN": {
+        "areaNumber": "123",
+        "groupCode": "45",
+        "serialNumber": "6789"
+      },
+      "firstName": "John",
+      "lastName": "Doe",
+      "birthDate": "1968-05-12T00:00:00Z",
+      "yearlyIncome": 100000,
+      "zipCode": "9132",
+      "creditScore": 700
+    },
+    "currentTime" : "2021-12-04T08:41:21.242Z"
+  },
+  "assertions": [
+    {
+      "label": "Approved",
+      "pointer": "/approval/approved",
+      "operator": "=",
+      "expected": true
+    },
+    {
+      "label": "Message",
+      "pointer": "/approval/message",
+      "operator": "⊃",
+      "expected": "Zip Code"
+    }
+  ]
+}
