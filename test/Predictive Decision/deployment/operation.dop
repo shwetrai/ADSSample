@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Predictive Decision">
+  <name>Predictive-Decision</name>
+  <uuid>f9a44dc7-eef7-4d48-8e5a-3af318de2467</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#05c955c6-6d8b-447b-b76c-46b551bccc02"/>
+  <targetRuleProject href="../../Predictive%20Decision#3b0ac5fd-444e-467d-99b0-4e893a9930e4"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>
